@@ -110,7 +110,6 @@ public class TxHandler {
     	for(Transaction.Input input : tx.getInputs()){
 			UTXO utx = new UTXO(input.prevTxHash, input.outputIndex);
 			pool.removeUTXO(utx);
-			System.out.println("hello");
 		}
     }
     
